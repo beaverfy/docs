@@ -1,4 +1,4 @@
-import Image, { ImageProps } from "next/image";
+import { ImageProps } from "next/image";
 
 export function NativeImage(props: { size: number; } & ImageProps) {
     return (
