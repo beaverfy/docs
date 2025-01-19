@@ -1,4 +1,4 @@
-import { MDXProvider } from "@mdx-js/react";
+//import { MDXProvider } from "@mdx-js/react";
 import { useMDXComponents } from "nextra-theme-docs";
 
 export function Beta({ children }: { children: string }) {
