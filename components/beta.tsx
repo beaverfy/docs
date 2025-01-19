@@ -7,7 +7,6 @@ export function Beta({ children }: { children: string }) {
   const generateId = (text: string) => text.toLowerCase().replace(/\s+/g, "-");
   const id = generateId(children);
   return (
-    <MDXProvider components={components}>
       <div className="flex items-center">
         <H1 id={id}>{children}</H1>
         <div
@@ -23,6 +22,5 @@ export function Beta({ children }: { children: string }) {
           aria-label="Permalink for this section"
         /> */}
       </div>
-    </MDXProvider>
   );
 }
