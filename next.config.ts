@@ -1,4 +1,3 @@
-import path from "node:path";
 import nextra from "nextra";
 import { setupDevPlatform } from "@cloudflare/next-on-pages/next-dev";
 
