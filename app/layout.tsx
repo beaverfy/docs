@@ -1,5 +1,5 @@
 import { Footer, Layout, Navbar } from "nextra-theme-docs";
-import { Head } from "nextra/components";
+import { Head, Image } from "nextra/components";
 import { getPageMap } from "nextra/page-map";
 import "@/global.scss";
 import "material-symbols";
@@ -25,7 +25,7 @@ const navbar = (
     }
     logo={
       <>
-        <img
+        <Image
           src="/icon_rounded.png"
           width="20"
           alt="Beaverfy Icon (a beaver on a gradient background)"
