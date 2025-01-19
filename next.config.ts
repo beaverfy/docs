@@ -1,5 +1,6 @@
 import path from "node:path";
 import nextra from "nextra";
+import { setupDevPlatform } from "@cloudflare/next-on-pages/next-dev";
 
 const withNextra = nextra({
   latex: true,
@@ -9,6 +10,10 @@ const withNextra = nextra({
   defaultShowCopyCode: true,
   contentDirBasePath: "/",
 });
+
+if (process.env.NODE_ENV === "development") {
+  await setupDevPlatform();
+}
 
 export default withNextra({
   reactStrictMode: true,
