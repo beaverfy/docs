@@ -1,0 +1,33 @@
+import { Callout, Cards, Card } from "nextra/components";
+
+# Introduction to Health
+
+Health is an open-source collection of health apps.
+
+{/* <Callout type="info">Health can not provide medical advice</Callout> */}
+
+## Apps
+
+<Cards
+  style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+    gap: "1rem",
+  }}
+>
+  <Cards.Card
+    icon={<span class="material-symbols-rounded">light_mode</span>}
+    title="Sunlight"
+    href="/"
+  />
+  <Cards.Card
+    icon={<span class="material-symbols-rounded">cardiology</span>}
+    title="Heart Connect"
+    href="/health//exercise"
+  />
+  <Cards.Card
+    icon={<span class="material-symbols-rounded">sentiment_satisfied</span>}
+    title="Reflections"
+    href="/health/reflect"
+  />
+</Cards>

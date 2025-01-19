@@ -1,0 +1,48 @@
+import { Card, Cards, Callout, Image } from "nextra/components";
+import { Icon as BrandIcon } from "../components/images";
+import { Icon } from "../components/icon";
+
+<div className="flexRow">
+    <BrandIcon className="flexRowImage" size={20}/>
+    <div>
+
+    # Beaverfy
+    Documentation for beaverfy products
+
+    </div>
+
+</div>
+
+<Callout type="warning">
+  This documentation is still being worked on, some data might be inaccurate, or
+  not correct at all.
+</Callout>
+
+## Products
+
+<Cards
+  style={{
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+    gap: "1rem",
+  }}
+>
+  <Cards.Card
+    icon={<Image src={"/health.png"} width={20} style={{ borderRadius: 8 }} />}
+    title="Health"
+    href="/guides/packages"
+  />
+  <Cards.Card
+    icon={
+      <Image
+        src={
+          "https://github.com/Turtlepaw/fitness-challenges/blob/main/images/icon.png?raw=true"
+        }
+        width={20}
+        style={{ borderRadius: 8 }}
+      />
+    }
+    title="Fitness Challenges"
+    href="/guides/creating"
+  />
+</Cards>
