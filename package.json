@@ -30,6 +30,7 @@
     "react-material-symbols": "^4.4.0",
     "sass": "^1.83.4",
     "sharp": "^0.33.5",
+    "stream": "^0.0.3",
     "vscode-languageserver-types": "^3.17.5"
   },
   "overrides": {
